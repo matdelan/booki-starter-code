@@ -153,7 +153,7 @@ header{
     align-items: center;
     font-weight: bold;
     gap:20px;
-    
+    flex-wrap: wrap;
 }
 
 .filtre-choix{
@@ -264,18 +264,43 @@ header{
 .activite-groupe{
     display: flex;
     gap:2%;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
-
 .activite-fiche{
     width: 22%;
+    
 }
 
 .activite-fiche img{
     height: 350px;
-    width: 300px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+/******************** Footer****/
+
+footer{
+    display: flex;
+    background-color: var(--main-bg-color);
+    margin-bottom: 5%;
+}
+
+.footer-a{
+    width:33%;
+    
+}
+
+.footer-a li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.footer-a a{
+    text-decoration: none;
+    color: gray;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -313,9 +338,90 @@ header{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activite-fiche img{
+        height: 220px;
+    }
+
+    .filtre-titre{
+        flex-basis: 100%;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .header-logo{
+        width: 50px;
+    }
+    
+
+    .header-nav ul{
+        display: flex;
+        list-style-type: none;
+        gap:0%;
+        justify-content:flex-start;
+        
+    }
+    .header-nav ul li{
+        width: 50%;
+        align-content:normal;
+    }
+
+    .header-nav{
+        /*flex-grow:0;
+        flex-basis: 100%;*/
+        width: 100%;
+    }
+
+    .header-nav a:hover{
+        /*border-bottom: 2px solid var(--main-color);*/
+        border-top: none;
+        color: var(--main-color);
+    }
+    .header-nav li:hover{
+        border-bottom: 2px solid var(--main-color);
+        
+    }
+
+    .populaires{
+        order:1;
+        margin-bottom: 20px;
+    }
+    .hebergements{
+        order: 2;
+    }
+    .populaires-cards{
+        flex-direction: column;
+        
+    }
+    .populaires .card{
+        width: 100%;
+    }
+    .hebergements-cards{
+        flex-direction: column;
+    }
+    .hebergements-cards .card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .activite-groupe{
+        flex-direction: column;
+    }
+    .activite-fiche{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-a{
+        width: 100%;
+    }
+
 }
