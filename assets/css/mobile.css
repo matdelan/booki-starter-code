@@ -1,90 +1,157 @@
-/* Small devices (phones, less than 768px) 
-@media (max-width: 767.98px) {*/
+/*** HEADER ***/
+.main-container{
+    padding: 0 0px;
+}
+header{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
-    /*** HEADER ***/
-    header{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+.header-nav ul{
+    display: flex;
+    list-style-type: none;
+    gap:0%;
+    justify-content:flex-start;
+    width: 100%;       
+}
+.header-nav ul li{
+    width: 50%;
+    align-content:normal;
+    text-align: center;
+    padding-bottom: 25px;
+}
 
-    .header-nav ul{
-        display: flex;
-        list-style-type: none;
-        gap:0%;
-        justify-content:flex-start;
-        width: 100%;
-        
-    }
-    .header-nav ul li{
-        width: 50%;
-        align-content:normal;
-        text-align: center;
-        padding-bottom: 25px;
-    }
+.header-nav{
+    width: 100%;
+    margin-left: -80px;
+}
 
-    .header-nav{
-         width: 100%;
-         margin-left: -80px;
-    }
-
-    .header-nav li a:hover{
-        border-top: none;
-        color: var(--main-color);
-    }
-    .header-nav li:hover{
-        border-bottom: 2px solid var(--main-color);
-        color: var(--main-color);
-        
-    }
-    /*** SEARCH BOX***/
-    .search-box-loupe{
-        display: block;
-    }
-
-    .search-box p{
-        display: none;
-    }
-
-    /*** HEBERGEMENT ET POPULAIRE ***/
-    .hebergements-and-populaires{
-        margin-top: -50px;
-    }
-    .populaires{
-        order:1;
-        margin-bottom: 20px;
-    }
-    .hebergements{
-        order: 2;
-    }
-    .populaires-cards{
-        flex-direction: column;
-        
-    }
-    .populaires .card{
-        width: 100%;
-    }
-    .hebergements-cards{
-        flex-direction: column;
-    }
-    .hebergements-cards .card{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    /*** ACTIVITE ***/
-    .activite-groupe{
-        flex-direction: column;
-    }
-    .activite-fiche{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    /*** FOOTER ***/
-    footer{
-        flex-direction: column;
-    }
-    .footer-a{
-        width: 100%;
-    }
+.header-nav li a:hover{
+    border-top: none;
+}
     
-/*}*/
+/*** SEARCH BOX***/
+.search-box-loupe{
+    display: block;
+}
+.search-box button{
+    display: none;
+}
+.filtre-choix{
+    width: 170px;
+}
+
+/*** HEBERGEMENT ET POPULAIRE ***/
+.hebergements-and-populaires{
+    margin-top: -50px;
+}
+
+.populaires{
+    order:1;
+    margin-bottom: 20px;
+}
+.hebergements{
+    order: 2;
+}
+.populaires-cards{
+    flex-direction: column;
+    
+}
+.populaires .card{
+    width: 100%;
+}
+.hebergements-cards{
+    flex-direction: column;
+}
+.hebergements-cards .card{
+    width: 100%;
+    margin-bottom: 15px;
+}
+/*** ACTIVITE ***/
+.activite h2{
+    margin-left: 10px;
+}
+.activite-groupe{
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.activite-groupe .card{
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+}
+.activite-fiche{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.activite-fiche img{
+    height: 180px;
+}
+.activite-fiche h4{
+    height: 20px;
+}
+
+/*** FOOTER ***/
+footer{
+    flex-direction: column;
+}
+.footer-a{
+    width: 100%;
+    justify-content: flex-start;
+}
+.card-padding{
+    padding: 5px;
+    margin-top: 0px;
+}
+.hebergements h2{
+    margin-bottom: 20px;
+}
+.hebergements-and-populaires .hebergements {
+    background-color: white;
+    border-radius: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+    
+.hebergements-and-populaires .populaires {
+    background-color: var(--main-bg-color);
+    border-radius: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.header-a a{
+    color: var(--main-color);
+    
+}
+.gris a{
+    color: black;
+    
+}
+.header-nav li{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+    
+}
+.header-nav .gris{
+    border-bottom: 2px solid var(--main-bg-color);
+}
+.header-nav ul li{
+    margin-right: 0%;
+}
+.recherche h1{
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+.recherche{
+    margin-left: 10px;
+}
+.recherche p{
+    font-size: 1.1em;
+}
+.search-box input{
+    width: 250px;
+    font-size: 1.3em;
+}
+
+
+    
+    
