@@ -165,6 +165,7 @@ h1{
     width: 150px;
     padding-left: 20px;
     font-size: 1em;
+
 }
 
 .search-box button{
@@ -228,6 +229,7 @@ h1{
 }
 .flex-row h6{
     font-weight:lighter;
+    font-size: 1em;
 }
 
 /****** Hebergements And Populaires ***********/

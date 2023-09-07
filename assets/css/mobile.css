@@ -64,9 +64,7 @@ header{
     width: 100%;
     margin-left: -15px;
 }
-.populaires-title{
-    margin-left: -15px;
-}
+
 .section-title{
     margin-left: -15px;
 }
@@ -166,7 +164,7 @@ footer{
     font-size: 1.1em;
 }
 .search-box input{
-    width: 250px;
+    width: 270px;
     font-size: 1.3em;
 }
 
