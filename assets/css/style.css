@@ -226,7 +226,9 @@ h1{
     margin-right: 10px;
     font-size: 0.5em;
 }
-
+.flex-row h6{
+    font-weight:lighter;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

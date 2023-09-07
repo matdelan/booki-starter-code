@@ -1,6 +1,6 @@
 /*** HEADER ***/
 .main-container{
-    padding: 0 0px;
+    padding: 0px;
 }
 header{
     flex-wrap: wrap;
@@ -28,6 +28,9 @@ header{
 
 .header-nav li a:hover{
     border-top: none;
+}
+.header-nav .gris a:hover{
+    color: black;
 }
     
 /*** SEARCH BOX***/
@@ -59,15 +62,30 @@ header{
 }
 .populaires .card{
     width: 100%;
+    margin-left: -15px;
+}
+.populaires-title{
+    margin-left: -15px;
+}
+.section-title{
+    margin-left: -15px;
 }
 .hebergements-cards{
     flex-direction: column;
+    margin-left: -15px;
 }
 .hebergements-cards .card{
     width: 100%;
     margin-bottom: 15px;
 }
+.hebergements-lien{
+    margin-left: -15px;
+}
 /*** ACTIVITE ***/
+.activite{
+    width: 90%;
+    margin-left: 20px;
+}
 .activite h2{
     margin-left: 10px;
 }
