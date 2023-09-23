@@ -3,10 +3,7 @@
     padding: 5px;
     margin-top: 0px;
 }
-.gris a{
-    color: black;
-    
-}
+
 .main-container{
     padding: 0px;
 }
@@ -46,11 +43,14 @@ header{
     width: 100%;
     
 }
-.header-a a{
+
+.header-nav a{
     color: var(--main-color);
-    
 }
 
+.gris a{
+    color: black;
+}
 .header-nav li a:hover{
     border-top: none;
 }
@@ -71,14 +71,14 @@ header{
 }
     
 /*** SEARCH BOX***/
-.recherche h1{
+.recherche-title{
     font-size: 1.5em;
     padding-right: 30px;
 }
 .recherche{
     margin-left: 10px;
 }
-.recherche p{
+.recherche-text{
     font-size: 1.1em;
 }
 
@@ -91,7 +91,7 @@ header{
 }
 
 /*** FILTRE ****/
-.filtre h2{
+.filtre-titre{
     margin-top: 0;
 }
 .filtre-choix{
@@ -106,7 +106,7 @@ header{
 .filtre-choix p{
     margin-left: -10px;
 }
-.filtre-info h6{
+.filtre-indication{
     font-size: 0.9em;
     padding-right: 10px;
 }

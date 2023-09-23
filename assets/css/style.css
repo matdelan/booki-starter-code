@@ -131,12 +131,12 @@ header{
 
 /****** Section 1 : Module de recherche ****/
 
-h1{
+.recherche-title{
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
-.recherche h1 + p{
+.recherche-text{
     font-size: 1em;
     margin-top: 0px;
 }
@@ -255,7 +255,7 @@ h1{
     margin-right: 10px;
     font-size: 0.5em;
 }
-.filtre-info h6{
+.filtre-indication{
     font-weight:lighter;
     font-size: 1em;
 }
