@@ -24,7 +24,7 @@ header{
     
 }
 
-.header-nav ul{
+.header__links{
     display: flex;
     list-style-type: none;
     gap:0%;
@@ -32,7 +32,7 @@ header{
     width: 100%;       
     padding: 0;
 }
-.header-nav ul li{
+.header__box{
     width: 50%;
     align-content:normal;
     text-align: center;
@@ -44,21 +44,21 @@ header{
     
 }
 
-.header-nav a{
+.header__link{
     color: var(--main-color);
 }
 
-.gris a{
+.header__link--black{
     color: black;
 }
-.header-nav li a:hover{
+.header__link:hover{
     border-top: none;
 }
-.header-nav .gris a:hover{
+.header_.header__link--black{
     color: black;
 }
 
-.header-nav li{
+.header__box{
     border-bottom: 2px solid var(--main-color);
     color: var(--main-color);
     
@@ -66,7 +66,7 @@ header{
 .header-nav .gris{
     border-bottom: 2px solid var(--main-bg-color);
 }
-.header-nav ul li{
+.header__box{
     margin-right: 0%;
 }
     
