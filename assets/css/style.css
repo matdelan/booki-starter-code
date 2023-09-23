@@ -61,15 +61,8 @@ body {
     font-weight: 700;
 }
 
-.neutral-star {
+.neutral-star{
     color: var(--main-bg-color)
-}
-
-.img-b{
-    border: 2px solid var(--main-bg-color);
-    border-radius: 50%;
-    padding: 10px;
-    margin: 5px;
 }
 
 p{
@@ -179,7 +172,7 @@ header{
     
 }
 
-.search-box input{
+.search__form{
     border: 1px solid var(--main-bg-color);;
     height: 50px;
     font-weight: bold;
@@ -189,7 +182,7 @@ header{
 
 }
 
-.search-box button{
+.search__btn{
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
     border-radius: 0% 8% 8% 0% / 30%;
@@ -201,7 +194,9 @@ header{
     font-weight: bold;
     text-align: center;
 }
-
+.search__btn:hover{
+    cursor: pointer;
+}
 
 /***** Filtres ****/
 
@@ -229,11 +224,11 @@ header{
     padding: 0px 15px 0px 15px;
 }
 
-.filtre-choix i{
+.filtre__icon{
     font-size: 1.3em;
 }
 
-.filtre-choix p{
+.filtre__text{
     font-size: 1em;
 }
 
@@ -241,14 +236,14 @@ header{
     background-color: var(--filter-bg-color);
 }
 
-.filtre-info{
+.filtre-infos{
     display:flex;
     align-items: center;
     font-size: 1.1em;
     height: 100px;
 }
 
-.filtre-info i{
+.filtre__info{
     border-radius: 50%;
     border: 2px solid var(--main-bg-color);
     padding: 1em;
@@ -292,7 +287,7 @@ header{
     justify-content: space-between;
 }
 
-.hebergements-cards img {
+.hebergements__img{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -311,10 +306,10 @@ header{
 .hebergements .card-content{
     margin-top: -10px;
 }
-.hebergements-lien {
+.hebergements-lien{
     margin-top: 30px;
 }
-.hebergements-lien a{
+.hebergements__link{
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -390,7 +385,7 @@ header{
     margin-top: 15px;
 }
 
-.activite-fiche img{
+.activite__img{
     height: 380px;
     width: 100%;
     border-top-left-radius: 20px;
@@ -409,7 +404,7 @@ footer{
     width:33%;
 }
 
-.footer-elem li{
+.footer__box{
     list-style-type: none;
     margin-bottom: 15px;
 }

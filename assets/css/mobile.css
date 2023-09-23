@@ -54,7 +54,7 @@ header{
 .header__link:hover{
     border-top: none;
 }
-.header_.header__link--black{
+.header__link--black{
     color: black;
 }
 
@@ -86,7 +86,8 @@ header{
     display: block;
     margin-right: 20px;
 }
-.search-box button{
+
+.search__btn{
     display: none;
 }
 
@@ -100,25 +101,25 @@ header{
     justify-content: flex-start;
     align-items: center;
 }
-.filtre-choix i{
+.filtre__icon{
     font-size: 1.5em;
 }
-.filtre-choix p{
+.filtre__text{
     margin-left: -10px;
 }
 .filtre-indication{
     font-size: 0.9em;
     padding-right: 10px;
 }
-.filtre-info i{
+.filtre__info{
     font-size: 0.6em;
 }
 
-.search-box input{
+.search__form{
     width: 100%;
     font-size: 1.3em;
 }
-.search-box input:focus{
+.search__form:focus{
     outline: none;
 }
 
@@ -210,7 +211,7 @@ header{
     width: 100%;
     margin-bottom: 15px;
 }
-.activite-fiche img{
+.activite__img{
     height: 141px;
 }
 .activite-fiche__title{
