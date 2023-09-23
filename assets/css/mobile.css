@@ -1,10 +1,30 @@
-/*** HEADER ***/
+/**** GENERAL ****/
+.card-padding{
+    padding: 5px;
+    margin-top: 0px;
+}
+.gris a{
+    color: black;
+    
+}
 .main-container{
     padding: 0px;
 }
+body{
+    margin: 0;
+}
+.card-title{
+    font-size: 1em;
+}
+.card-content{
+    font-size: 1.2em;
+}
+
+/*** HEADER ***/
 header{
     flex-wrap: wrap;
     flex-direction: column;
+    
 }
 
 .header-nav ul{
@@ -13,6 +33,7 @@ header{
     gap:0%;
     justify-content:flex-start;
     width: 100%;       
+    padding: 0;
 }
 .header-nav ul li{
     width: 50%;
@@ -23,7 +44,11 @@ header{
 
 .header-nav{
     width: 100%;
-    margin-left: -80px;
+    
+}
+.header-a a{
+    color: var(--main-color);
+    
 }
 
 .header-nav li a:hover{
@@ -32,26 +57,78 @@ header{
 .header-nav .gris a:hover{
     color: black;
 }
+
+.header-nav li{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+    
+}
+.header-nav .gris{
+    border-bottom: 2px solid var(--main-bg-color);
+}
+.header-nav ul li{
+    margin-right: 0%;
+}
     
 /*** SEARCH BOX***/
+.recherche h1{
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+.recherche{
+    margin-left: 10px;
+}
+.recherche p{
+    font-size: 1.1em;
+}
+
 .search-box-loupe{
     display: block;
+    margin-right: 20px;
 }
 .search-box button{
     display: none;
 }
-.filtre-choix{
-    width: 170px;
+
+/*** FILTRE ****/
+.filtre h2{
+    margin-top: 0;
 }
+.filtre-choix{
+    width: 130px;
+    font-size: 0.85em;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filtre-choix i{
+    font-size: 1.5em;
+}
+.filtre-choix p{
+    margin-left: -10px;
+}
+.filtre-info h6{
+    font-size: 0.9em;
+    padding-right: 10px;
+}
+.filtre-info i{
+    font-size: 0.6em;
+}
+
+.search-box input{
+    width: 100%;
+    font-size: 1.3em;
+}
+.search-box input:focus{
+    outline: none;
+}
+
 
 /*** HEBERGEMENT ET POPULAIRE ***/
-.hebergements-and-populaires{
-    margin-top: -50px;
-}
-
 .populaires{
     order:1;
     margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
 }
 .hebergements{
     order: 2;
@@ -62,29 +139,63 @@ header{
 }
 .populaires .card{
     width: 100%;
-    margin-left: -15px;
+    margin-bottom: 20px;
+}
+.populaires-fauxlien{
+    width: 100%;
 }
 
-.section-title{
-    margin-left: -15px;
-}
 .hebergements-cards{
     flex-direction: column;
-    margin-left: -15px;
 }
 .hebergements-cards .card{
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .hebergements-lien{
-    margin-left: -15px;
+    margin-top: 0;
 }
+.hebergements-title{
+    margin-bottom: 20px;
+}
+.hebergements-and-populaires .hebergements {
+    background-color: white;
+    border-radius: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+    
+.hebergements-and-populaires .populaires {
+    background-color: var(--main-bg-color);
+    border-radius: 0;
+    padding: 30px 30px 10px 30px;
+    box-sizing: border-box;
+}
+.order1{
+    order : 1;
+}
+.order2{
+    order : 2;
+}
+.order3{
+    order : 3;
+}
+.order4{
+    order : 4;
+}
+.order5{
+    order : 5;
+}
+.order6{
+    order : 6;
+}
+
 /*** ACTIVITE ***/
 .activite{
     width: 90%;
     margin-left: 20px;
 }
-.activite h2{
+.activite-title{
     margin-left: 10px;
 }
 .activite-groupe{
@@ -100,9 +211,9 @@ header{
     margin-bottom: 15px;
 }
 .activite-fiche img{
-    height: 180px;
+    height: 141px;
 }
-.activite-fiche h4{
+.activite-fiche__title{
     height: 20px;
 }
 
@@ -110,63 +221,14 @@ header{
 footer{
     flex-direction: column;
 }
-.footer-a{
+.footer-elem{
     width: 100%;
     justify-content: flex-start;
+    margin-bottom: 15px;
 }
-.card-padding{
-    padding: 5px;
-    margin-top: 0px;
-}
-.hebergements h2{
-    margin-bottom: 20px;
-}
-.hebergements-and-populaires .hebergements {
-    background-color: white;
-    border-radius: 0;
-    padding: 30px;
-    box-sizing: border-box;
-}
-    
-.hebergements-and-populaires .populaires {
-    background-color: var(--main-bg-color);
-    border-radius: 0;
-    padding: 30px;
-    box-sizing: border-box;
-}
-.header-a a{
-    color: var(--main-color);
-    
-}
-.gris a{
-    color: black;
-    
-}
-.header-nav li{
-    border-bottom: 2px solid var(--main-color);
-    color: var(--main-color);
-    
-}
-.header-nav .gris{
-    border-bottom: 2px solid var(--main-bg-color);
-}
-.header-nav ul li{
-    margin-right: 0%;
-}
-.recherche h1{
-    font-size: 1.5em;
-    padding-right: 30px;
-}
-.recherche{
-    margin-left: 10px;
-}
-.recherche p{
-    font-size: 1.1em;
-}
-.search-box input{
-    width: 270px;
-    font-size: 1.3em;
-}
+
+
+
 
 
     
