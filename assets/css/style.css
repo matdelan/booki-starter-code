@@ -198,6 +198,9 @@ header{
 .search__btn:hover{
     cursor: pointer;
 }
+.search-box-loupe:hover{
+    cursor: pointer;
+}
 
 /***** Filtres ****/
 
