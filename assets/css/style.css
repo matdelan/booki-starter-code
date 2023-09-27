@@ -147,7 +147,7 @@ header{
 .search-box-gps{
    border: 2px solid var(--main-bg-color);
    border-radius: 30% 0% 0% 30%;
-   background-color: var(--main-bg-color);;
+   background-color: var(--main-bg-color);
    height: 20px;
    padding: 15px 10px 10px 15px;
    color: black;
@@ -174,7 +174,7 @@ header{
 }
 
 .search__form{
-    border: 1px solid var(--main-bg-color);;
+    border: 1px solid var(--main-bg-color);
     height: 50px;
     font-weight: bold;
     width: 160px;
